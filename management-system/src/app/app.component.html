@@ -1,0 +1,16 @@
+<div class="header">
+  <h4>Employee Management Portal</h4>
+</div>
+<div class="navdiv" [style.height.px]="screenHeight">
+  <ul>
+    <li>
+      <a routerLink="department">Department</a>
+    </li>
+    <li>
+      <a routerLink="employee">Employee</a>
+    </li>
+  </ul>
+</div>
+<div class="contentdiv" [style.height.px]="screenHeight">
+  <router-outlet></router-outlet>
+</div>             

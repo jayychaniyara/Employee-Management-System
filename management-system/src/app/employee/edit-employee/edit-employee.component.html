@@ -1,0 +1,66 @@
+<div class="content">
+    <div class="row">
+        <div class="col-12">
+            <h4>Edit employee details</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+                <label>Employee Id:</label>
+                <span><input type="text" readonly value="{{employee.id}}" placeholder="EmployeeId" name="Id"></span>
+        </div>
+        <div class="col-6">
+            <label>First Name:</label>
+            <input type="text" [(ngModel)]="employee.firstName" placeholder="firstName" name="FirstName">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label>Last Name:</label>
+            <span><input text="text" [(ngModel)]="employee.lastName" placeholder="lastName" name="LastName"></span>
+        </div>
+        <div class="col-6">
+            <label>Email:</label>
+            <span><input type="text" [(ngModel)]="employee.email" placeholder="Email" name="Email"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label>Date Of Birth:</label>
+            <span><input type="date" [ngModel]="employee.dateOfBirth" (ngModelChange)="onDateOfBirthChange($event)"  placeholder="DateOfBirth" name="DateOfBirth"></span>
+        </div>
+        <div class="col-6">
+            <label>Age:</label>
+            <span><input type="text" readonly value="{{employee.age}}" placeholder="Age" name="Age"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label>Joined Date:</label>
+            <span><input type="text" readonly value="{{employee.joinedDate | date:'MM/dd/yyyy'}}" placeholder="JoinedDate" name="JoinedDate"></span>
+        </div>
+        <div class="col-6">
+            <label>IsActive:</label>
+            <span><input type="checkbox" [(ngModel)]="employee.isActive" placeholder="IsActive" name="IsActive"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label>Department Id:</label>
+            <input type="text" [(ngModel)]="employee.departmentId" placeholder="DepartmentId" name="DepartmentId">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-6">
+            <button class="btn btn-info btn-block actionButtonRight" type="submit" (click)="onSave()">Save</button>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-info btn-block actionButton" type="submit" (click)="onCancel()">Cancel</button>
+        </div>
+    </div>
+</div>

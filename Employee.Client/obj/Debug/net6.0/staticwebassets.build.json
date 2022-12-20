@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ISqEKXrNgR1qhKaR+fb4pxxOi4h5RYFWUdSwk4E6EXw=",
+  "Source": "Employee.Client",
+  "BasePath": "_content/Employee.Client",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

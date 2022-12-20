@@ -1,0 +1,43 @@
+.main {
+  overflow: hidden;
+}
+
+.navdiv {
+  width: 200px;
+  background-color: #a765d6;
+  height: 500px;
+  position:fixed ;
+}
+
+.contentdiv {
+  margin-left: 200px;
+  overflow-y: auto;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: rgb(225, 178, 220);
+  //background-color: #8023c2;
+  font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    //background-color: rgb(225, 178, 220);
+    background-color:rgb(186, 177, 181);
+    color: black;
+  }
